@@ -1,0 +1,51 @@
+* {
+
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+body{
+    background-image: url("bckg03.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    overflow: auto;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+    text-align: left;
+    color: #092756;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bold;
+}
+.note{
+    padding: 5px;
+    text-align: center;
+    color: #092756;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bold;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h1 {
+    text-align: center;
+    color: #092756;
+    font-weight: bold;
+}
+p {
+    font-size: 25px;
+    padding-left: 10px;
+    color: #092756;
+}
+ul{
+    text-align: left;
+    padding-left: 40%;
+}

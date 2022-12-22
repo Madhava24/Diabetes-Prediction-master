@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Diabetes Predictor</title>
+    <link rel="stylesheet" href="../static/css/results.css">
+</head>
+<body class="resultsof">
+<h1>Diabetes Prediction and Diet Prescription</h1>
+<p>Hello {{ name }}! &#10; The probability of you having diabetes is {{ percent }}%</p>
+<p>{{ msg[0] }} the following diet can help {{ msg[1] }} </p>
+<div class="row">
+  <div class="column">
+    <img src="../static/img/image01.jpg" alt="Vitamins" style="width:100%;height: 500px">
+      <ul>
+          <b>Vitamins = {{ vitamin }}%<br><br> </b>
+          <li>Green Leafy Vegetables</li>
+          <li>Bell Pepper</li>
+          <li>Noni Fruit</li>
+          <li>Aloevera</li>
+      </ul>
+  </div>
+  <div class="column">
+    <img src="../static/img/image02.jpg" alt="Proteins" style="width:100%;height: 500px">
+      <ul>
+          <b>Proteins = {{ prot }}%<br><br></b>
+          <li>Fish</li>
+          <li>Red Meat</li>
+          <li>Dry fruits, Nuts, Peas, Seeds</li>
+          <li>Egg</li>
+      </ul>
+  </div>
+</div>
+<div class="row">
+    <div class="column">
+    <img src="../static/img/image04.jpg" alt="Fibers" style="width:100%;height: 500px">
+        <ul>
+            <b>Fibers = {{ fib }}%<br><br></b>
+            <li>Corn</li>
+            <li>Avocados</li>
+            <li>Berries, Pears</li>
+            <li>Barley, Oats</li>
+        </ul>
+  </div>
+  <div class="column">
+    <img src="../static/img/image03.jpg" alt="Carbohydrates and Sugars" style="width:100%;height: 500px">
+      <ul>
+          <b>Carbohydrates and Sugars = {{ carb }}%<br><br></b>
+          <li>Banana</li>
+          <li>Sweet Potatoes</li>
+          <li>White Bread,Rice</li>
+          <li>Sweets, Beverages</li>
+      </ul>
+  </div>
+
+</div>
+<div class="note">
+    Also, a weekly walk of {{ walk }} hours or cycling of {{ walk-2 }} hours will greatly help you in maintaining your health.<br>
+    Note: If you are unable to reduce the carbohydrates and sugars from your diet then you can increase the fibers in your diet.
+    <br>Fibers greatly help in reducing sugars in our bodies.
+</div>
+
+</body>
+</html>
